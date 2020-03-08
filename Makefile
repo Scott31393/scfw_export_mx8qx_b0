@@ -261,7 +261,7 @@ ifeq ($(HW), SIMU)
     FLAGS += -DSIMU -DNO_DEVICE_ACCESS
     WARNS += -Wformat=2 -Wnested-externs
 else
-	CROSS_COMPILE = /gcc-arm-none-eabi-*/bin/arm-none-eabi-gcc
+	CROSS_COMPILE = /opt/gcc-arm-none-eabi-9-2019-q4-major/bin/arm-none-eabi-
     #GNU GCC
     AS		 = $(CROSS_COMPILE)as
     LD		 = $(CROSS_COMPILE)ld
